@@ -23,5 +23,8 @@
   , "devDependencies": {
       "should": "*"
     , "coffee-script": "1.2"
+    , "chai": "latest"
+    , "sinon": "latest"
+    , "sinon-chai": "latest"
   }
 }
