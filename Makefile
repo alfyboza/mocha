@@ -30,7 +30,7 @@ lib-cov:
 
 test: test-unit
 
-test-all: test-bdd test-tdd test-qunit test-exports test-unit test-grep test-jsapi test-compilers test-junit
+test-all: test-bdd test-tdd test-qunit test-exports test-unit test-grep test-jsapi test-compilers
 
 test-jsapi:
 	@node test/jsapi
@@ -90,12 +90,6 @@ test-bail:
 		--reporter $(REPORTER) \
 		--bail \
 		test/acceptance/misc/bail
-
-test-junit:
-	@./bin/mocha \
-		--reporter $(REPORTER) \
-		--bail \
-		test/reporters/junit
 
 non-tty:
 	@./bin/mocha \
